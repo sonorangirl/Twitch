@@ -1,0 +1,62 @@
+// ==========================================================================
+// Base Styles
+// ==========================================================================
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box
+}
+
+body {
+  height: 100%;
+  font-family: $font-family--primary;
+  background-color: $color-primary;
+  background: url('../img/blue-purple-gradient.jpg') no-repeat center center;
+  background-size: cover; 
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+  padding-top: 10px;
+}
+
+a:hover, a:visited, a:focus {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $font-family--primary;
+  font-weight: bold;
+  color: $color-secondary;
+}
+
+p {
+  font-family: $font-family--secondary;
+  color: $color-secondary;
+}
+
+body > .container-fluid {
+  padding: 60px 15px 0;
+}
+.container-fluid .text-muted {
+  margin: 20px 0;
+}
+
+//Get rid of bootstrap link/button outline after click
+.btn:focus, a:focus {
+    outline: none !important
+}
+
+
+

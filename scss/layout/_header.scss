@@ -1,0 +1,14 @@
+// ==========================================================================
+// Header Styles
+// ==========================================================================
+
+
+//Logo
+.twitch-logo {
+	@include img-replace('Twitch_Logo_White.png', 300px, 100px);
+	background-size: cover;
+    margin: 0 auto;
+    opacity: .9;
+}
+
+

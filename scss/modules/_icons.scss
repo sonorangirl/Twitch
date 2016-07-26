@@ -1,0 +1,21 @@
+// ==========================================================================
+// Button Styles
+// ==========================================================================
+	
+.menu-button {
+	
+	background-color: transparent;
+    border: none;
+    font-size: 1.4em;
+    margin-top: 3%;
+
+    &:hover {
+    	color: $color-secondary;
+    }
+
+    &:hover, &:visited, &:focus {
+    	background-color: transparent;
+    }
+}
+
+	

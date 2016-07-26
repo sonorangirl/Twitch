@@ -1,0 +1,116 @@
+// ==========================================================================
+// Section Styles
+// ==========================================================================
+
+//User Columns
+.online-streamers, .offline-streamers {
+	width: 80%;
+}
+
+.streamer {
+    padding: 5%;
+    margin: 4%;
+    outline: 3px solid $color-secondary;
+    outline-offset: -6px; 
+
+    &.main-info {
+        background-color:  $color-primary;
+        color: $color-light;
+    }
+
+    //Styles for .game-link shown upon hover 
+    &.game-link {
+        background-color: $color-secondary;
+        color: $color-light;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    &-name, &-status, &-game {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    &-name, &-game {
+        font-size: 1.4em;
+        font-weight: bold;
+    }
+
+    &-img img {
+    	height: 50%;
+    	border-radius: 50%;
+
+        @media (min-width: $break-large) {
+            width: 170%;
+            margin-left: -15px;
+        }
+    }
+}
+
+// .online-streamers .streamer {
+//     &.main-info {
+//         border-left: solid 8px $color-primary;
+//     }
+
+//     &.game-link {
+//         border-left: solid 8px $color-secondary;
+//     }
+// }
+
+// .offline-streamers .streamer {
+//     &.main-info {
+//         border-left: solid 8px $color-dark;
+//     }
+
+//     &.game-link {
+//         border-left: solid 8px $color-shadow;
+//     }
+// }
+
+//Make offline streamers appear faded out
+.offline-streamers a .streamer-container .streamer {
+    opacity: .65;
+
+    &.main-info {
+        color: $color-shadow;
+    }
+    
+    //but not faded out when hovering
+    &:hover {
+        background-color: $color-dark;
+        opacity: 1;
+    }
+}
+
+//switch outline color for online streamers on hover
+.online-streamers a .streamer-container .streamer:hover {
+    outline-color: $color-primary;
+}
+
+
+
+//Toggle between showing .main-info and .game-link
+.streamer-hidden {
+   display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
