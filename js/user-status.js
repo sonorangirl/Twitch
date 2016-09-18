@@ -20,7 +20,7 @@ function showUserInfo(userImage, userName, userStatus, userGame, userLink) {
 //Gets status for each user
 function determineUserStatus(twitchUser) {
 
-	var twitchStatusCall = "https://api.twitch.tv/kraken/streams/" + twitchUser + "?callback=?";
+	var twitchStatusCall = "https://api.twitch.tv/kraken/streams/" + twitchUser + "?client_id=apquhgcwgzvz1ozz9p12tb716x141qu&callback=?";
 
 	$.getJSON( twitchStatusCall, function(data) {
 
@@ -41,7 +41,7 @@ function determineUserStatus(twitchUser) {
 //Gets info on each user and displays it
 function getUserData(twitchUser, streamingStatus) {
 
-	var twitchDataCall = "https://api.twitch.tv/kraken/channels/" + twitchUser + "?callback=?";
+	var twitchDataCall = "https://api.twitch.tv/kraken/channels/" + twitchUser + "?client_id=apquhgcwgzvz1ozz9p12tb716x141qu&callback=?";
 	
 	if (streamingStatus === "Online") {
 
